@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+ 
+        /* 后代选择器(包含选择器),选择到的是box下面的所有后代p */
+           /* .box p{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+          } 
+        */
+
+
+        .box div p {
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        }
+
+      </style>
+      
+
+</head>
+<body>
+    <div class="box">
+        <p>0000</p>
+        <div>
+          <p>11111</p>
+          <p>22222</p>
+        </div>
+        <div class="box2">
+          <p>333</p>
+        </div>
+        <p>444</p>
+      </div>
+
+</body>
+</html>

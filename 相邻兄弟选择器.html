@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+ 
+        /* 相邻兄弟,会选择到box后面紧挨着的p,那么就是内容为111的p标签 */
+         .box~p{
+           width: 200px;
+           height: 200px;
+           background-color: yellow;
+         }
+      
+     </style>
+
+</head>
+<body>
+    <p>000</p>
+    <div class="box">盒子1</div>
+    <p>111</p>
+    <p>222</p>
+    <p>333</p>
+    <div>
+      <p>44444</p>
+    </div>
+    <p>5555</p>
+    
+</body>
+</html>
