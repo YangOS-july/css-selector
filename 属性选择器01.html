@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性选择器</title>
+    <style>
+        /* 第一种方法：选择含有指定属性的元素。
+                语法：[属性名]{} */
+        /*选择属性名为title,设置字体颜色红色  */
+        [title]{
+            color:red;
+        }
+        /* 第二种用法：选择含有指定属性及指定属性值的元素。
+                语法：[属性名=属性值]{} */
+        /*选择属性名为title和属性值为ab的元素 ,设置字体颜色绿色 */
+        [title=ab]{
+            color: green;
+        }
+        /* 第三种用法：选择含有指定属性及指定属性之开头的元素。
+                语法：[属性名^=属性值]{}  */
+        /* 选择属性名为title和属性值以ab开头的元素，设置背景色黄色 */
+        [title^=ab]{
+            background-color: yellow;
+        }
+        /* 第四种用法：选择含有指定属性及指定属性值结尾的元素。
+                语法：[属性名$=属性值] */
+        /* 选择属性名为title和属性值以ab结尾的元素，设置字体为30px */
+        [title$=ab]{
+            font-size: 30px;
+        }
+        /* 第五种用法：选择含有指定属性，只要含有某个属性值的元素。
+                语法：[属性值*=属性名]{} */
+        /* 选择属性名为title和属性值含有c的元素，设置背景色为绿色 */
+        [title*=c]{
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1 title="a">《出塞》</h1>
+    <h2 title="ab">唐·王昌龄</h2>
+    <p title="abc">秦时明月汉时关，</p>
+    <p title="abab">万里长征人未还。</p>
+    <p title="c">但使龙城飞将在，</p>
+    <p>不教胡马度阴山。</p>
+</body>
+</html>
