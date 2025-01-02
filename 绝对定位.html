@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子绝父相</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        .nofather {
+                /* 使用绝对定位 */
+            position: absolute;
+            top: 0;
+            left: 100px;
+        }
+
+        .father {
+            width: 200px;
+            height: 200px;
+            /* 父元素使用相对定位 */
+            position: relative;
+            left: 100px;
+        }
+
+        .son {
+            /* 子元素使用绝对定位 */
+            position: absolute;
+            left: 50px;
+            top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nofather">我没有父元素</div>
+
+    <h1>内容</h1>
+    <h1>内容</h1>
+    <h1>内容</h1>
+    <h1>内容</h1>
+    <div class="father">
+        <div class="son">我有父元素</div>
+    </div>
+    <h1>内容</h1>
+    <h1>内容</h1>
+    <h1>内容</h1>
+    <h1>内容</h1>
+    <h1>内容</h1>
+
+</body>
+
+</html>
