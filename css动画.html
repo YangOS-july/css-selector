@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            margin: 50px auto;
+            /* 设置过渡 */
+            /* 设置过渡的元素属性 */
+            /* transition-property: height background-color width; */
+           /* transition-property: all; */
+            /* 设置过渡的时间 */
+            /* transition-duration: 5s; */
+            /* 设置过渡的延迟 */
+            /* transition-delay: 3s; */
+            /* 设置过渡的变化曲线 */
+            /* transition-timing-function:ease ; */
+            transition:5s;
+ 
+        }
+        .box:hover{
+            width: 300px;
+            height: 300px;
+            background-color: orange;
+            opacity: 0;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <!-- 需求：鼠标移入，盒子高度变成300px -->
+    <div class="box"></div>
+</body>
+</html>
